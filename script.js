@@ -169,13 +169,35 @@ function hoisTing(){
     return console.log("hello");
 }
 
-let a = 28;
-let b =98;
+var a = 28;
+var b =98;
+
+
+// let a = 28;
+// let b =98;
 
 // we can acces variable which is declare using 
 // VAR key word only not CONST or not by LET key word 
 
+// THIS KEY WORD IS JS 
 
+const movie = {
+    name:"RRR",
+    rating:9.5,
+    director:"S.S rajamouli",
+
+    function  : function(){
+        return this.director;
+    }
+};
+
+
+
+// console.log(this);
+
+
+
+   
 
 
 
