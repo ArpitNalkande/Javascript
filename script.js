@@ -134,6 +134,47 @@ nFun=(x)=>{
 
 console.log(arrobj.map(nFun));
 
+console.log(Math.random());
+
+// TRY CATCH BLOCK
+
+// if(a>b){
+//     console.log("hello");
+// }
+
+// try {
+//     if(a>b){
+//         console.log("hello");
+//     };
+// } catch (error) {
+//     console.log(error);
+// }
+
+
+// HOISTING IN JAVASCRIPT 
+
+
+hoisTing();
+
+if(a>b){
+    console.log("ok");
+}
+else{
+    console.log("okk")
+}
+
+// hoisTing=()=>console.log("what is hoisting ");
+
+function hoisTing(){
+    return console.log("hello");
+}
+
+let a = 28;
+let b =98;
+
+// we can acces variable which is declare using 
+// VAR key word only not CONST or not by LET key word 
+
 
 
 
