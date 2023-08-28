@@ -186,14 +186,84 @@ const movie = {
     rating:9.5,
     director:"S.S rajamouli",
 
-    function  : function(){
+    fun  : function(){
         return this.director;
     }
 };
 
 
 
-// console.log(this);
+// JSON --> JAVASCRIPT OJECT NOTATION (Array of Object)
+
+
+const obj2 = {
+
+    "employees":[
+        {"firstname":"radhe","lastname":"mohan"},
+        {"firstname":"shyam","lastname":"mohan"},
+        {"firstname":"mohan","lastname":"radhe"},
+    ]
+}
+
+console.log(obj2.employees[1]);
+
+
+
+// CALLBACK FUNCTION IN JS
+// pasing function as an argument in another fuction 
+
+function okBrother(){
+    console.log("optimization");
+}
+
+function radhe(){
+    console.log(5+5);
+}
+
+okBrother(radhe);
+
+// const settt = setTimeout(
+//     () => {
+//     console.log("After 5000 miliseconds")
+// }, 5000);
+
+
+// const sett  = setTimeout(myfunction,6000);
+
+// function myfunction(){
+//     console.log("first");
+// }
+
+
+// PROMISES IN  JS            ---->(based on callback hell)
+
+// IN 3 STEP 
+// 1. Pending 
+// 2. Fullfill
+// 3. Rejected
+
+//  THEN AND CATCH CONCEPT 
+
+// if Fullfill then ( THEN )
+// if rejected then ( CATCH )
+
+
+const obj11 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+             let roll_no = [1,2,3,4,5];
+            //  console.log("roll_no");
+            // resolve(roll_no);
+            reject("Error 404 Not Found");
+    },1000);
+
+});
+
+obj11.then((roll_no) => {
+    console.log(roll_no);
+}).catch((err) => {
+    console.log(err);
+});
+
 
 
 
