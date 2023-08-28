@@ -248,21 +248,36 @@ okBrother(radhe);
 // if rejected then ( CATCH )
 
 
-const obj11 = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-             let roll_no = [1,2,3,4,5];
-            //  console.log("roll_no");
-            // resolve(roll_no);
-            reject("Error 404 Not Found");
-    },1000);
+// const obj11 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//              let roll_no = [1,2,3,4,5];
+//             //  console.log("roll_no");
+//             // resolve(roll_no);
+//             reject("Error 404 Not Found");
+//     },1000);
 
+// });
+
+// obj11.then((roll_no) => {
+//     console.log(roll_no);
+// }).catch((err) => {
+//     console.log(err);
+// });
+
+let raid = -1;
+const obj3 = new Promise((resolved,rejected)=>{
+    if(raid == -1){
+         raid = 2;
+    }
+    // resolved(raid);
+    rejected("Clean Cheet");
 });
 
-obj11.then((roll_no) => {
-    console.log(roll_no);
-}).catch((err) => {
-    console.log(err);
-});
+obj3.then(()=>{
+    console.log(raid);
+}).catch((error)=>{
+    console.log(error);
+})
 
 
 
