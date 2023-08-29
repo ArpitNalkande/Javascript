@@ -297,6 +297,79 @@ const obj11 = new Promise((resolve,reject)=>{
 
 
 
+// FETCH API(Aplication Programming Interface)
+// fetch() method is used to fetch the data from api 
+// fetch() always returns promise 
+
+
+// fetch('https://data.covid19india.org/v4/min/timeseries.min.json')
+// .then((alldata)=>{
+//     // console.log(alldata);
+//     return alldata.json();
+// })
+// .then((actualdata)=>{
+//  const data = actualdata.MH.dates;
+//  document.getElementById("demo").innerHTML = data;
+
+
+// })
+// .catch((error)=>{
+//     console.log(error);
+// })
+
+
+// TEMPLATE LITERALS 
+ 
+
+let ft  = "Arpit";
+let ltn  = "Nalkande";
+let fname =  `Full name  ${ft} ${ltn}`;
+
+console.log(fname);
+
+
+
+// SPREAD OPERATOR
+
+const numbersOne = [1, 2, 3];
+const numbersTwo = [4, 5, 6];
+const numbersCombined = [...numbersOne, ...numbersTwo];
+
+console.log(numbersCombined);
+
+
+const car = {
+    Color: "Red",
+    Name: "Mustang",
+    Brand: "Ford",
+};
+
+const car2 = {
+    year:"2023",
+    color:"yellow",
+};
+
+const combined = {...car,...car2};
+console.log(combined);
+
+
+
+// CLOSURE IN JS 
+// IF THE INNER FUNCTION ACCESS THE PARAMETER/AURGUMENT OF OUPTER FUNCTION THEN IT CALLED AS CLOSURE 
+
+
+function myFn(){
+    let variable = "sarcastic";
+    function myFn1(){
+        console.log(variable);
+    }
+    myFn1();
+}
+
+myFn();
+
+
+
    
 
 
