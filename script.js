@@ -248,15 +248,15 @@ okBrother(radhe);
 // if rejected then ( CATCH )
 
 
-// const obj11 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//              let roll_no = [1,2,3,4,5];
-//             //  console.log("roll_no");
-//             // resolve(roll_no);
-//             reject("Error 404 Not Found");
-//     },1000);
+const obj11 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+             let roll_no = [1,2,3,4,5];
+            //  console.log("roll_no");
+            resolve(roll_no);
+            // reject("Error 404 Not Found");
+    },1000);
 
-// });
+});
 
 // obj11.then((roll_no) => {
 //     console.log(roll_no);
@@ -264,20 +264,33 @@ okBrother(radhe);
 //     console.log(err);
 // });
 
-let raid = -1;
-const obj3 = new Promise((resolved,rejected)=>{
-    if(raid == -1){
-         raid = 2;
-    }
-    // resolved(raid);
-    rejected("Clean Cheet");
-});
+// let raid = -1;
+// const obj3 = new Promise((resolved,rejected)=>{
+//     if(raid == -1){
+//          raid = 2;
+//     }
+//     // resolved(raid);
+//     rejected("Clean Cheet");
+// });
 
-obj3.then(()=>{
-    console.log(raid);
-}).catch((error)=>{
-    console.log(error);
-})
+// obj3.then(()=>{
+//     console.log(raid);
+// }).catch((error)=>{
+//     console.log(error);
+// })
+
+
+// ASYNC AWAIT IN JS 
+// if the function is declare with a key word async then it always return promise
+// async function is used to get or fetch  the data from promises 
+// it can be used as a replacement in THEN and CATCH BLOCK in promises 
+
+// async function getElement(){
+//     // const pp = await obj11;
+//     console.log(await obj11);
+// }
+
+// getElement();
 
 
 
