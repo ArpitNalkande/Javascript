@@ -280,6 +280,8 @@ const obj11 = new Promise((resolve,reject)=>{
 // })
 
 
+
+
 // ASYNC AWAIT IN JS 
 // if the function is declare with a key word async then it always return promise
 // async function is used to get or fetch  the data from promises 
