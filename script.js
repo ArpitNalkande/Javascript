@@ -369,14 +369,12 @@ myFn();
 
 // FUNCTION SCOPE IN JS 
 
-
 function Mass(){
     let g = "gajju";
     console.log(g)
 }
 
 Mass();
-
 
 // BLOCK SCOPE
 
