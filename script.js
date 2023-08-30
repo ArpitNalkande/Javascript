@@ -367,6 +367,27 @@ function myFn(){
 myFn();
 
 
+// FUNCTION SCOPE IN JS 
+
+
+function Mass(){
+    let g = "gajju";
+    console.log(g)
+}
+
+Mass();
+
+
+// BLOCK SCOPE
+
+let y = 10
+if(y>5){
+    console.log("greater");
+}
+
+
+
+
 
    
 
