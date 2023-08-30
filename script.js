@@ -352,7 +352,6 @@ const combined = {...car,...car2};
 console.log(combined);
 
 
-
 // CLOSURE IN JS 
 // IF THE INNER FUNCTION ACCESS THE PARAMETER/AURGUMENT OF OUPTER FUNCTION THEN IT CALLED AS CLOSURE 
 
