@@ -82,7 +82,6 @@ let hello = "string";
 console.log(hello.length);
 
 
- /////////
 
 const str = "hello \"brother\" what are you doing";
 console.log(str);
@@ -193,7 +192,7 @@ const movie = {
 
 
 
-// JSON --> JAVASCRIPT OJECT NOTATION (Array of Object)
+// JSON --> JAVASCRIPT OJECT NOTATION (Array of an Object)
 
 
 const obj2 = {
@@ -382,6 +381,8 @@ let y = 10
 if(y>5){
     console.log("greater");
 }
+
+// in block scope the variable is only access if it is declare as a global variable
 
 
 
