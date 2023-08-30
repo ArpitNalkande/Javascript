@@ -328,7 +328,6 @@ let fname =  `Full name  ${ft} ${ltn}`;
 console.log(fname);
 
 
-
 // SPREAD OPERATOR
 
 const numbersOne = [1, 2, 3];
